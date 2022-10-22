@@ -10,6 +10,7 @@ module.exports = {
 		},
 	],
   webpack: {
+    extensions:['.js', '.jsx', '.tsx', '.less'],
     alias: {
       "@": resolve("src"),
       "components": resolve("src/components"),

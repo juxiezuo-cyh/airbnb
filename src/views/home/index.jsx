@@ -1,5 +1,7 @@
 import React, { memo, useEffect } from 'react'
 import hyRequest from '@/services';
+import { HomeWrapper } from './style';
+import HomeBanner from './c-cpns/home-banner';
 
 const Home = memo(() => {
   useEffect(() => {
@@ -9,7 +11,9 @@ const Home = memo(() => {
   }, []);
 
   return (
-    <div>Home</div>
+    <HomeWrapper>
+      <HomeBanner />
+    </HomeWrapper>
   )
 })
 
